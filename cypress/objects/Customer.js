@@ -1,5 +1,5 @@
-export class Customer{
-    constructor(firstName = 'Jhon', lastName = 'Smith', email = 'jhon@smith.com', bilingAddress = new Address(), shippingAddress = new Address()){
+export class Customer {
+    constructor(firstName = 'Jhon', lastName = 'Smith', email = 'jhon@smith.com', bilingAddress = new Address(), shippingAddress = new Address()) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -8,10 +8,8 @@ export class Customer{
     }
 }
 
-export class Address{
-    constructor(firstName = 'Jhon', lastName = 'Smith', addressLine1 = '2523 Harron Drive', city = 'Baltimore', state = 'Maryland', zipCode = '21202', country = 'United States'){
-        this.firstName = firstName;
-        this.lastName = lastName;
+export class Address {
+    constructor(addressLine1 = '2523 Harron Drive', city = 'Baltimore', state = 'Maryland', zipCode = '21202', country = 'United States') {
         this.addressLine1 = addressLine1;
         this.city = city;
         this.state = state;
